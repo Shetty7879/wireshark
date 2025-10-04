@@ -1,0 +1,33 @@
+Protocol Analysis Report - Wireshark Capture
+
+Captured Duration: ~1 minute
+Capture Tool: Wireshark
+
+Identified Protocols:
+----------------------
+1. **DNS (Domain Name System)**  
+   - Used for resolving domain names to IP addresses.
+   - Observed packets: DNS query to "google.com".
+
+2. **TCP (Transmission Control Protocol)**  
+   - Provides reliable data transmission.
+   - Observed as part of web browsing (HTTP/TLS connections).
+
+3. **HTTP (HyperText Transfer Protocol)**  
+   - Protocol for web communication.
+   - Observed GET/POST requests during website visits.
+
+Optional (if seen):
+4. **TLS (Transport Layer Security)**  
+   - Used for encrypted communication (HTTPS).
+   - Packets observed but not readable due to encryption.
+
+Packet Examples:
+----------------
+- DNS Query: A request to resolve "www.google.com".
+- TCP Handshake: SYN, SYN-ACK, ACK sequence observed.
+- HTTP GET Request: Accessed "http://example.com" with a visible GET request.
+
+Conclusion:
+-----------
+This exercise helped in understanding live network traffic, analyzing common protocols, and using filters like `dns`, `tcp`, `http` in Wireshark.
